@@ -1,0 +1,12 @@
+{
+  "name": "notion-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@notionhq/client": "^1.0.1",
+    "dotenv": "^16.0.3"
+  }
+}
