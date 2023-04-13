@@ -1,16 +1,15 @@
-import { Client } from "@notionhq/client";
+const { Client } = require("@notionhq/client");
 require("dotenv").config();
 
 const notion = new Client({ auth: process.env.TOKEN });
-
 const databaseId = process.env.DATABASE_ID;
 
-async function addItem(text) {
+async function addItem(text, category) {
   try {
     const response = await notion.pages.create({
       parent: { database_id: databaseId },
       properties: {
-        title: {
+        Name: {
           title: [
             {
               text: {
@@ -18,6 +17,11 @@ async function addItem(text) {
               },
             },
           ],
+        },
+        Category: {
+          select: {
+            name: category,
+          },
         },
       },
     });
@@ -28,4 +32,4 @@ async function addItem(text) {
   }
 }
 
-addItem("Yurts in Big Sur, California");
+addItem(process.argv[2], process.argv[3]);
