@@ -4,10 +4,10 @@ Simple apps to interact with Notion API to create a database item, append block 
 
 # Requirement
 
-* Node.js
-* Notion
-* Notion SDK for JavaScript
-* dotenv
+- Node.js
+- Notion
+- Notion SDK for JavaScript
+- dotenv
 
 # Installation
 
@@ -17,7 +17,7 @@ Simple apps to interact with Notion API to create a database item, append block 
 
 3. Create a page and get a block ID (page ID).
 
-3. Install Node.js and depended packages.
+4. Install Node.js and depended packages.
 
 ```
 $ npm install

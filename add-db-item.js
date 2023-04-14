@@ -6,6 +6,7 @@ const databaseId = process.env.DATABASE_ID;
 
 async function addItem(text, category) {
   try {
+    cat = category ? "仕事" : "プライベート";
     const response = await notion.pages.create({
       parent: { database_id: databaseId },
       properties: {
@@ -20,7 +21,7 @@ async function addItem(text, category) {
         },
         Category: {
           select: {
-            name: category,
+            name: cat,
           },
         },
       },
