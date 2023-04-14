@@ -38,5 +38,5 @@ $ node add-db-item.js [Name of your database item]
 Run append-block.js script to append a todo block in the page
 
 ```
-$ node add-db-item.js [Name of todo item]
+$ node append-block.js [Name of todo item]
 ```
