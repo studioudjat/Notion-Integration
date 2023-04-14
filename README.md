@@ -1,6 +1,6 @@
 # Notion-Integration
 
-Simple apps to interact with Notion API to create a database item, append block to a existing note, and etc. The apps are enpowered by the Notion SDK.
+Simple apps to interact with Notion API to create a database item, append block to an existing note, and etc. The apps are enpowered by the Notion SDK.
 
 # Requirement
 
