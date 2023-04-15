@@ -19,7 +19,7 @@ Simple apps to interact with Notion API to create a database item, append block 
 
 4. Install Node.js and depended packages.
 
-```
+```bash
 $ npm install
 ```
 
@@ -31,12 +31,12 @@ $ npm install
 
 Run add-db-item.js script to add a database item.
 
-```
+```bash
 $ node add-db-item.js [Name of your database item]
 ```
 
 Run append-block.js script to append a todo block in the page
 
-```
+```bash
 $ node append-block.js [Name of todo item]
 ```
